@@ -1,0 +1,154 @@
+:root {
+  --primary: #2563eb;
+  --success: #22c55e;
+  --error: #ef4444;
+  --gray: #64748b;
+}
+
+body {
+  
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 40%, #ffffff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth-container {
+  background: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  position: relative;
+  box-shadow: 0 0 10px rgb(159, 159, 160);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 22px;
+  justify-content: center;
+  
+}
+
+.logo i {
+  background: var(--primary);
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin: 0 0 10px 0;
+  color: #0f172a;
+}
+p.subtitle {
+  text-align: center;
+  color: var(--gray);
+  margin-bottom: 20px;
+  font-size: 15px;
+ 
+}
+
+.form-box {
+  display: none;
+}
+.form-box.active {
+  display: block;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #334155;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.wrapper i {
+  position: absolute;
+  left: 15px;
+  color: #94a3b8;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px 12px 45px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f1f5f9;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: var(--primary);
+  background: white;
+  box-shadow: 0 0 0 4px rgba(51, 130, 248, 0.1);
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+ background: linear-gradient(90deg, #0c5ad6, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+
+}
+
+.btn:hover {
+   background: linear-gradient( #2563eb, #6e94fd);
+    box-shadow: 0 0 10px rgb(81, 149, 252);
+}
+
+.footer {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: var(--gray);
+}
+.footer a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#match-msg {
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+#signup-box {
+    height: 500px;
+    border-radius: 50px;
+}
+#signupForm{
+    margin-top: 1px;
+    /* column-gap: 10px; */
+
+}

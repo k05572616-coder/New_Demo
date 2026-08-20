@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssetFlow - Authentication</title>
+    <meta name="description" content="Login or sign up to BlueVault Inventory Management System.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./login.css">
+    <style>
+        .form-msg {
+            font-size: 0.85rem;
+            margin-top: 8px;
+            min-height: 20px;
+            font-weight: 500;
+            text-align: center;
+        }
+        .form-msg.error   { color: var(--error,   #e74c3c); }
+        .form-msg.success { color: var(--success,  #2ecc71); }
+    </style>
+</head>
+<body>
+
+<div class="auth-container">
+
+    <div class="logo"><i class="fa-solid fa-box-archive"></i> BlueVault Asset</div>
+
+    <!-- LOGIN BOX -->
+    <div id="login-box" class="form-box active">
+        <h1>Welcome back</h1>
+        <p class="subtitle">Please enter your credentials to sign in</p>
+
+        <form id="loginForm">
+            <div class="input-group">
+                <label>Email address</label>
+                <div class="wrapper"><i class="fa-regular fa-envelope"></i><input type="email" required placeholder="name@company.com"></div>
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <div class="wrapper"><i class="fa-solid fa-lock"></i><input type="password" required placeholder="••••••••"></div>
+            </div>
+            <div id="login-msg" class="form-msg"></div>
+            <button type="submit" class="btn">Sign in</button>
+        </form>
+        <div class="footer">
+            Don't have an account? <a onclick="toggleForm('signup-box')">Sign up</a>
+        </div>
+    </div>
+
+    <!-- SIGNUP BOX -->
+    <div id="signup-box" class="form-box">
+        <h1>Create account</h1>
+        <p class="subtitle">Join us to start managing your assets</p>
+
+        <form id="signupForm">
+            <div class="input-group">
+                <label>Full Name</label>
+                <div class="wrapper"><i class="fa-regular fa-user"></i><input type="text" required placeholder="John Doe"></div>
+            </div>
+            <div class="input-group">
+                <label>Email address</label>
+                <div class="wrapper"><i class="fa-regular fa-envelope"></i><input type="email" required placeholder="name@company.com"></div>
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <div class="wrapper"><i class="fa-solid fa-lock"></i><input type="password" id="s-pass" required placeholder="••••••••"></div>
+            </div>
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <div class="wrapper">
+                    <i class="fa-solid fa-shield-check"></i>
+                    <input type="password" id="s-confirm" required placeholder="••••••••">
+                </div>
+                <div id="match-msg"></div>
+            </div>
+            <div id="signup-msg" class="form-msg"></div>
+            <button type="submit" class="btn" id="create-btn">Create Account</button>
+        </form>
+        <div class="footer">
+            Already have an account? <a onclick="toggleForm('login-box')">Sign in</a>
+        </div>
+    </div>
+
+</div>
+
+<script src="./login.js"></script>
+
+</body>
+</html>
