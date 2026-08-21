@@ -14,11 +14,11 @@
  Dashboard
 
  # Tech Stack 
- Frontend: HTML, CSS, JS, Bootstrap
- Backend: PHP
- Database: MYSQL
+ >Frontend: HTML, CSS, JS, Bootstrap
+ >Backend: PHP
+ >Database: MYSQL
 
 # Setup
 1. Clone the repository:
-2. git clone https://github.com/k05572616-coder/Inventory Management System.git
-3. cd Inventory Management System
+ git clone https://github.com/k05572616-coder/Inventory_Management_System.git
+ cd Inventory_Management_System
